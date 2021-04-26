@@ -1,0 +1,43 @@
+.ingredients-list {
+    list-style: outside none none;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 15pt;
+}
+
+.ingredients-list li:first-child {
+    border-top: 1px dashed #b9b9b4;
+}
+
+.ingredients-list li {
+    padding: 0;
+    border-bottom: 1px dashed #b9b9b4;
+    line-height: 200%;
+}
+
+.recipe {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    background-color: #f1f1f1;
+}
+
+.card-img, .card-img-top {
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.card-deck .card {
+    padding-bottom: 0;
+}
+
+.card-block {
+    margin-bottom: 150px;
+}
+
+.card:hover {
+    box-shadow: 0 0 4px #999;
+}
+
+.card>img {
+    margin-bottom: 0.75rem;
+}
