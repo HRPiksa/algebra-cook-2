@@ -16,19 +16,19 @@ jobs:
     - uses: michaelw90/PHP-Lint@master
 
     - name: Validate composer.json and composer.lock
-      run: composer validate --strict
+      run: project/composer validate --strict
 
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v2
       with:
-        path: vendor
+        path: project/vendor
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
+      run: project/composer install --prefer-dist --no-progress
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
