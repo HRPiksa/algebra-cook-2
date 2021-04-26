@@ -3,7 +3,7 @@
 /storage
 /project/storage/*.key
 /project/vendor
-/project/.env
+# /project/.env
 /project/.env.backup
 /project/.phpunit.result.cache
 /project/docker-compose.override.yml
